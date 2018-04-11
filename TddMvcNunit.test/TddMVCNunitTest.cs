@@ -69,7 +69,7 @@ namespace TddMvcNunit.test
         [Test]
         public void Details()
         {
-            ViewResult result = controller.Details(2) as ViewResult;
+            ViewResult result = controller.Details(1) as ViewResult;
 
             Assert.AreEqual(result.Model, book1);
         }
@@ -77,7 +77,7 @@ namespace TddMvcNunit.test
         public void Create()
         {
             // Lets create a new book object
-            Book newBook = new Book { Id = 7, BookName = "new", Authorname = "new"};
+            Book newBook = new Book { Id = 3, BookName = "Book3", Authorname = "Author1"};
 
             //Add the book object in the book object;
             controller.Create(newBook);
