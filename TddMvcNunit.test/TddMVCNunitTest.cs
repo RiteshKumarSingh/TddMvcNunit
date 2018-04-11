@@ -69,7 +69,7 @@ namespace TddMvcNunit.test
         [Test]
         public void Details()
         {
-            ViewResult result = controller.Details(9) as ViewResult;
+            ViewResult result = controller.Details(2) as ViewResult;
 
             Assert.AreEqual(result.Model, book1);
         }
