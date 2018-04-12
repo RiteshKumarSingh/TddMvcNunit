@@ -98,27 +98,27 @@ namespace TddMvcNunit.test
             CollectionAssert.Contains(bookList, editedBook);
         }
 
-        [Test]
-        public void Divide_Validvalue_ValidOutput()
-        {
-            // Arrange
-            int testA = 4;
-            int testB = 2;
+        //[Test]
+        //public void Divide_Validvalue_ValidOutput()
+        //{
+        //    // Arrange
+        //    int testA = 4;
+        //    int testB = 2;
            
-            decimal expectedvalue = 2;
+        //    decimal expectedvalue = 2;
 
-            //Create a mock object of a mail controller 
-            var mockMailClient = new Moq.Mock<BooksController>();
+        //    ////Create a mock object of a mail controller 
+        //    //var mockMailClient = new Moq.Mock<BooksController>();
 
-            //Configure dummy method so that it return true when it gets any string as parameters to the method
-            mockMailClient.Setup(client => client.SendEmail(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Returns(true);
+        //    ////Configure dummy method so that it return true when it gets any string as parameters to the method
+        //    //mockMailClient.Setup(client => client.SendEmail(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Returns(true);
 
-            // Act
-            var result = controller.Divide(testA, testB);
+        //    // Act
+        //    var result = controller.Divide(testA, testB);
 
-            // Assert 
-            Assert.AreEqual(expectedvalue, result, "The value of action divide was not as expected");
-        }
+        //    // Assert 
+        //    Assert.AreEqual(expectedvalue, result, "The value of action divide was not as expected");
+        //}
 
     }
 }
